@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:voice_project/views/Login_Screen/loginscreen.dart';
 import 'package:voice_project/views/Registration_Screen/widgets/regwidgets.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -118,7 +119,11 @@ class SignUpScreen extends StatelessWidget {
                   const Text("Already have an account? "),
                   TextButton(
                     onPressed: () {
-                      Navigator.pop(context);
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoginScreen(),
+                          ));
                     },
                     child: const Text("Login"),
                   ),
