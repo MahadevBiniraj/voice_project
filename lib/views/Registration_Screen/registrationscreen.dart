@@ -3,7 +3,7 @@ import 'package:voice_project/views/Login_Screen/loginscreen.dart';
 import 'package:voice_project/views/Registration_Screen/widgets/regwidgets.dart';
 
 class SignUpScreen extends StatelessWidget {
-  const SignUpScreen({super.key});
+  SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
